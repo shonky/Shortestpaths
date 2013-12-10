@@ -24,3 +24,17 @@ Dijkstras::Dijkstras()
         min=INT_MAX;
         min_index=-1;
 }
+
+//returns the index of the minimum
+int Dijkstras::minDistance()
+{
+        //int min=INT_MAX;
+        //int min_index=-1;
+        for(int i=0;i<vertSize;i++)
+                if(shortestSet[i]=false && distance[i]<=min)
+                {
+                        min=distance[i];
+                        min_index=i;
+                }
+        return min_index;
+}
