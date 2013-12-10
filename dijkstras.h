@@ -17,3 +17,10 @@ private:
         int min_index;
         int vertSize;
 };
+
+Dijkstras::Dijkstras()
+{
+        vertSize=0;
+        min=INT_MAX;
+        min_index=-1;
+}
