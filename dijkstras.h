@@ -9,7 +9,7 @@ public:
         int minDistance();
         int printSolution();
         void dijkstra(int**,int);
-        
+        void reliableShortestPath(int,int);        
 private:
         int* distance;
         bool* shortestSet;
@@ -46,6 +46,15 @@ int Dijkstras::printSolution()
                 cout<<i<<":"<<" "<<distance[i];
 }
 
+void Dijkstras::reliableShortestPath(int k,int src)
+{
+cout<<"NODE S"<<src;
+minDistance();
+for(int i=0;i<=k;i++)
+{
+cout<<"NODE "<<i<<":"<<distance[i];
+}
+}
 
 void Dijkstras::dijkstra(int** graph,int src)
 {
