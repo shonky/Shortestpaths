@@ -38,3 +38,11 @@ int Dijkstras::minDistance()
                 }
         return min_index;
 }
+
+int Dijkstras::printSolution()
+{
+        cout<<"Vertex Distance from source\n";
+        for(int i=0;i<vertSize;i++)
+                cout<<i<<":"<<" "<<distance[i];
+}
+
