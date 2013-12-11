@@ -9,7 +9,7 @@ public:
         int minDistance();
         int printSolution();
         void dijkstra(int**,int);
-        int getVertSize();
+        
 private:
         int* distance;
         bool* shortestSet;
