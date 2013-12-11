@@ -46,3 +46,8 @@ int Dijkstras::printSolution()
                 cout<<i<<":"<<" "<<distance[i];
 }
 
+int Dijkstras::getVertSize()
+{
+        return vertSize;
+}
+
