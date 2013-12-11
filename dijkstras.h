@@ -59,4 +59,22 @@ void Dijkstras::dijkstra(int** graph,int src)
                 distance[i]=INT_MAX;
                 shortestSet[i]=false;
         }
+         distance[src]=0;
+        minDistance();
+        for(int count=0;count<9-1;count++)
+        {
+                int u=min_index;
+                shortestSet[u]=true;
+
+                for(int v=0;v<9;v++)
+                {
+                        if((distance[u]+graph[u][v]<distance[v])&&(distance[u]!=INT_MAX)&&(!shortestSet[v]))
+                        {
+                                distance[v]=distance[v]+graph[v][u];
+
+                        }
+                printSolution();
+                }
+        }
+
 }
