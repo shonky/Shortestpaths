@@ -51,3 +51,12 @@ int Dijkstras::getVertSize()
         return vertSize;
 }
 
+void Dijkstras::dijkstra(int** graph,int src)
+{
+        //Find shortest path for all verticies
+        for(int i=0;i<=9;i++)
+        {
+                distance[i]=INT_MAX;
+                shortestSet[i]=false;
+        }
+}
